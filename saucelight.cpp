@@ -1,6 +1,5 @@
 #include <cmath>
 #include "mariosong.h"
-#include "nyancat.h"
 
 // #include <Timer>
 
@@ -171,7 +170,7 @@ void playWin() {
     if (millis() - winStart > 5400) {
         change_state(WIN_ACK);
     } else {
-        singMarioTheme();
+        singMarioWin();
     }
 }
 
